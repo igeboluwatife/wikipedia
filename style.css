@@ -1,0 +1,447 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #202122;
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px;
+    background-color: #202122;
+}
+
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header h1 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    color: #202122;
+}
+
+.header p {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+/* LANGUAGE SECTION */
+
+.language-section {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto 10px;
+}
+
+.language {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 150px;
+}
+
+.language a {
+    color: #36c;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.language a:hover {
+    text-decoration: underline;
+}
+
+.language span {
+    color: #54595d;
+    font-size: 12px;
+}
+
+
+/* LANGUAGE POSITIONS */
+
+.english {
+    top: 10px;
+    left: 100px;
+}
+
+.japanese {
+    top: 10px;
+    right: 100px;
+}
+
+.spanish {
+    top: 130px;
+    left: 0;
+}
+
+.russian {
+    top: 70px;
+    right: 30px;
+}
+
+.german {
+    top: 250px;
+    left: 100px;
+}
+
+.french {
+    top: 200px;
+    right: 0;
+}
+
+.chinese {
+    top: 70px;
+    left: 0px;
+}
+
+.italian {
+    top: 200px;
+    left: 0;
+}
+
+.portuguese {
+    top: 130px;
+    right: 0;
+}
+
+.arabic {
+     top: 250px;
+    right: 100px;
+}
+
+
+/* WIKIPEDIA LOGO */
+
+.wiki-logo {
+    position: absolute;
+    top: 65px;
+    left: 220px;
+}
+
+.wiki-logo img {
+    width: 160px;
+    height: 160px;
+}
+
+
+/* SEARCH SECTION */
+
+.search-section {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 420px;
+    height: 45px;
+    margin: auto;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+}
+
+.search-box input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-box select {
+    height: 30px;
+    border: none;
+    background-color: white;
+    color: #54595d;
+    outline: none;
+}
+
+.search-box button {
+    width: 50px;
+    height: 45px;
+    border: none;
+    background-color: #36c;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #447ff5;
+}
+
+
+/* READ BUTTON */
+
+.read-button {
+    margin-top: 30px;
+    padding: 12px 20px;
+    border: 1px solid #a2a9b1;
+    background-color: white;
+    color: #36c;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.read-button span {
+    margin-left: 10px;
+    color: #54595d;
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+    margin-top: 50px;
+    border-top: 1px solid #eaecf0;
+    padding: 40px,20px,20px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+/* FOOTER PROJECTS */
+
+.footer-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 25px;
+    margin-top: 40px;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.project {
+display: flex;
+align-items: center;
+gap: 12px;
+
+}
+
+.project img {
+width: 45px;
+height: 45px;
+object-fit: contain;
+flex-shrink: 0;
+}
+
+.project h4 {
+    color: #36c;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.project p {
+    color: #54595d;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* DOWNLOAD SECTION */
+
+.download {
+    text-align: center;
+    padding: 35px 15px;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.download h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.download p {
+    font-size: 13px;
+    color: #54595d;
+    line-height: 1.6;
+    margin-top:-35px;
+}
+
+
+/* DONATION SECTION */
+
+.donation {
+text-align: left;
+padding: 10px;
+}
+
+.donation p {
+font-size: 13px;
+color: #54595d;
+line-height: 1.7;
+margin-bottom: 15px;
+margin-top: 40px;
+}
+
+.donation a {
+color: #36c;
+font-size: 13px;
+text-decoration: none;
+margin-right: 10px;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    width: 100%;
+    border-top: 1px solid #eaecf0;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #54595d;
+    margin: 0;
+    
+}
+
+.copyright a {
+    color: #36c;
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 800px) {
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    .language-section {
+        width: 100%;
+        max-width: 550px;
+        height: 320px;
+    }
+
+    .language {
+        min-width: 110px;
+    }
+
+    .language a {
+        font-size: 13px;
+    }
+
+    .language span {
+        font-size: 10px;
+    }
+
+    .wiki-logo {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 80px;
+    }
+
+    .wiki-logo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .chinese,
+    .arabic {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .language-list {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer-projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+     .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+    .language-section {
+        height: 280px;
+    }
+
+    .language {
+        min-width: 90px;
+    }
+
+    .language a {
+        font-size: 12px;
+    }
+
+    .language span {
+        font-size: 9px;
+    }
+
+    .wiki-logo {
+        top: 75px;
+    }
+
+    .wiki-logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer-projects {
+        grid-template-columns: 1fr;
+    }
+
+    .language-list {
+        justify-content: center;
+    }
+
+}
